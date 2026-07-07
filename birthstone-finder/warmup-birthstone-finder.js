@@ -21,3 +21,14 @@ const birthstones = {
   November: "Topaz or Citrine",
   December: "Tanzanite, Zircon, or Turquoise",
 };
+
+
+// This obtains the month from the user via command line input
+const month = process.argv[2];
+
+// Checks if the month exists in the object
+if (birthstones[month]) {
+  console.log(`The birthstone for ${month} is ${birthstones[month]}.`);
+} else {
+  console.log("Invalid month. Please enter a valid month.");
+}
